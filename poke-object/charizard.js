@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var Pokemon_1 = require("../Pokemon/Pokemon");
+var Types_1 = require("../PokeType/Types");
+var charizardMoves = ["Flamethrower", "Fire Spin", "Inferno", "Wing Atack"];
+var charizardTypes = [Types_1["default"].TYPES.FIRE, Types_1["default"].TYPES.FLYING];
+var Charizard = new Pokemon_1["default"](6, "Charizard", charizardTypes, charizardMoves, 78, 84, 78, 100);
+console.table(Charizard);
+Charizard.Attack(charizardMoves);
+Charizard.Run_Fly(charizardTypes);
+Charizard.AttackType(Types_1["default"].TYPES.FIRE);

@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var Pokemon_1 = require("../Pokemon/Pokemon");
+var Types_1 = require("../PokeType/Types");
+var pikachuMoves = ['Thunderbolt', 'Quick Attack', 'Zip Zap', 'Thunder'];
+var pikachuType = [Types_1["default"].TYPES.ELECTRIC];
+var pikachu = new Pokemon_1["default"](25, 'Pikachu', pikachuType, pikachuMoves, 35, 55, 40, 90);
+console.log(pikachu);
+console.table(pikachu);
+pikachu.Attack(pikachuMoves);
+pikachu.Run_Fly(pikachuType);
